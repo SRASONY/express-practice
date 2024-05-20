@@ -24,7 +24,7 @@ app.use(express.urlencoded({extended: true, limit: "700mb"}));
 //GET METHOD
 //유저 정보 가져오기
 //query or path로 받음
-//성공 staus : 200 냐냐
+//성공 staus : 200 
 app.get("/users",(req,res)=>{
     res.status(200).json({users}); 
 })
